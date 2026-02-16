@@ -21,5 +21,9 @@ steps:
     - '--region'
     - 'asia-northeast1'
 
+
+options:
+  logging: CLOUD_LOGGING_ONLY
+
 images:
   - 'gcr.io/$PROJECT_ID/glossary-scraper:$COMMIT_SHA'
