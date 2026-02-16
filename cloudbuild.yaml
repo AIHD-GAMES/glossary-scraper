@@ -14,7 +14,7 @@ steps:
     args:
     - 'run'
     - 'jobs'
-    - 'update'
+    - 'deploy'
     - 'glossary-scraper-job'
     - '--image'
     - 'gcr.io/$PROJECT_ID/glossary-scraper:$COMMIT_SHA'
