@@ -1,0 +1,980 @@
+[
+  {
+    "term": "相対取引",
+    "reading": "あいたいとりひき",
+    "definition": "証券取引所等の市場を通さずに、売り手と買い手が当事者同士で価格や売買数量等を決めて行う取引のことです。たとえば大口の…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "アイランドリバーサル",
+    "reading": "アイランドリバーサル",
+    "definition": "アイランドリバーサルは、ローソク足等のテクニカルチャート上で、離れ小島のような形になっている状態を示します。たとえば…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "アウトパフォーム",
+    "reading": "アウトパフォーム",
+    "definition": "アウトパフォームは投資の成果を表す言葉で、日経平均株価やTOPIX（東証株価指数）等、運用の目標としている指標に対し…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "赤字国債",
+    "reading": "あかじこくさい",
+    "definition": "赤字国債とは、国の財政の赤字を補填するために発行される特例国債のことで、その性質上赤字国債とも呼ばれます。財政法上、…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "アクティビスト／モノ言う株主",
+    "reading": "アクティビスト／モノいうかぶぬし",
+    "definition": "アクティビスト（Activist）とは本来「活動家」を表す英語ですが、株式の世界では株主としての権利を積極的に行使し…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "アクティブ運用",
+    "reading": "アクティブうんよう",
+    "definition": "アクティブ運用とは、目安となる指数（ベンチマーク）を上回る成績を目指す運用スタイルのことです。たとえば、日本株で運用…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "アク抜け",
+    "reading": "アクぬけ",
+    "definition": "一般的に株価が下がるにはそれなりの理由が存在しますが、それら悪材料が出尽くして、株価が安定もしくは下げ止まった状態を…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "預け替え",
+    "reading": "移管",
+    "definition": "預け替え（移管）とは、証券会社が投資家の指示により保管していた株式等を投資家に返却せずに、ほかの証券会社に預け替えを…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "アセットアロケーション",
+    "reading": "アセットアロケーション",
+    "definition": "アセット（Asset）は「資産」、アロケーション（Allocation）は「配分」という意味の英語で、アセットアロケ…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "アニュアルレポート",
+    "reading": "アニュアルレポート",
+    "definition": "アニュアルレポート（Annual Report）とは、年次報告書のことで、企業がディスクロージャー（情報公開）の観点…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "アノマリー",
+    "reading": "アノマリー",
+    "definition": "アノマリー（Anomaly）とは、現代ポートフォリオ理論や相場に関する理論の枠組みでは説明することができないものの、…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "アベノミクス",
+    "reading": "アベノミクス",
+    "definition": "アベノミクスとは、2012年12月26日に始まった第2次安倍政権において、安倍晋三首相（当時）が表明した「3本の矢」…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "あや",
+    "reading": "あや",
+    "definition": "特に理由が見つからない中で、相場が一時的に小幅に上下動すること。下落トレンドにある相場が一時的に小幅に上げることを「…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "アルゴリズム取引",
+    "reading": "アルゴリズムとりひき",
+    "definition": "コンピューターがマーケットの価格推移等から最適な発注タイミングを判断して自動的に売買の注文を出す取引をアルゴリズム取…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "暗号資産",
+    "reading": "あんごうしさん",
+    "definition": "暗号資産（仮想通貨）とは、円やドル等の法定通貨ではなく、国による保証を持たない通貨のことです。実際に存在する紙幣や貨…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "安定株主",
+    "reading": "あんていかぶぬし",
+    "definition": "安定株主とは、長期的に安定して株式を保有する株主のことです。主に企業の経営者や関係者、または業務提携や取引関係にある…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "安定操作取引",
+    "reading": "あんていそうさとりひき",
+    "definition": "株式等の募集や売出しを容易にするために、主幹事証券会社等が当該銘柄について一定期間に行う市場での売買等のことをいいま…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "安定配当",
+    "reading": "あんていはいとう",
+    "definition": "企業は利益の中から株主への還元策として定期的に配当を出しますが、その配当が安定して出ている状態を安定配当といいます。…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "アンブレラ",
+    "reading": "アンブレラ",
+    "definition": "アンブレラとは、ひとつの投資信託の中にサブ・ファンドといわれる複数の投資信託が設定されている仕組みのことです。運用中…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "50音",
+    "reading": "",
+    "definition": "",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "アルファベット・その他",
+    "reading": "",
+    "definition": "",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "株式に関する用語",
+    "reading": "",
+    "definition": "",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "投資信託に関する用語",
+    "reading": "",
+    "definition": "",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "債券に関する用語",
+    "reading": "",
+    "definition": "",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "FXに関する用語",
+    "reading": "",
+    "definition": "",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "ラップ口座に関する用語",
+    "reading": "",
+    "definition": "",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "年金・保険に関する用語",
+    "reading": "",
+    "definition": "",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "制度に関する用語",
+    "reading": "",
+    "definition": "",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "相続に関する用語",
+    "reading": "",
+    "definition": "",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "その他の経済に関する用語",
+    "reading": "",
+    "definition": "",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "イールドカーブ",
+    "reading": "イールドカーブ",
+    "definition": "縦軸に最終利回り、横軸に債券の残存期間を取ったグラフ上に、（同一発行体の）債券の最終利回りと残存期間に対応する点をつ…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "遺産分割",
+    "reading": "いさんぶんかつ",
+    "definition": "相続人が複数いる場合に、これら相続人に遺産を分配することです。",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "遺産分割協議",
+    "reading": "いさんぶんかつきょうぎ",
+    "definition": "遺産の分割方法を相続人全員で協議することです。",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "遺産分割協議書",
+    "reading": "いさんぶんかつきょうぎしょ",
+    "definition": "相続人全員で遺産分割協議をした結果、その内容を書式にまとめたものを遺産分割協議書といいます。遺産分割協議書には、誰が…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "遺贈",
+    "reading": "いぞう",
+    "definition": "被相続人が遺言により財産を与えることです。",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "板",
+    "reading": "いた",
+    "definition": "売り方と買い方の指値を気配値といいますが、この気配値の売買注文状況を並べたものを板と呼びます。現在では、証券会社等の…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "委託者",
+    "reading": "いたくしゃ",
+    "definition": "委託者とは信託用語のひとつで、信託の財産を信頼できる受託者に託し、受益者のためにその財産の運用や管理等を指示する者を…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "委託手数料",
+    "reading": "いたくてすうりょう",
+    "definition": "株式を取引するには証券会社に口座を開き、売買を委託して取引所に注文を取り次いでもらう必要がありますが、その際、証券会…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "委託保証金",
+    "reading": "いたくほしょうきん",
+    "definition": "投資家が株式の信用取引や発行日決済取引を行う際に証券会社に差し入れる担保のことで、原則として売買成立日（約定日）から…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "板寄せ",
+    "reading": "いたよせ",
+    "definition": "板寄せとは証券取引所の売買成立方法で、「板寄せ方式」ともいいます。相場が始まるときの始値を決める際に使われますが、そ…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "一目均衡表",
+    "reading": "いちもくきんこうひょう",
+    "definition": "一目均衡表とは、日本で生まれたテクニカルチャートのひとつで、一目山人（いちもくさんじん：ペンネーム）によって開発され…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "いってこい",
+    "reading": "いってこい",
+    "definition": "金融業界における「いってこい」とは、一定期間の間に株価等相場が値上がりもしくは値下がりしたのちに、再び元の水準まで戻…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "一般勘定",
+    "reading": "いっぱんかんじょう",
+    "definition": "一般勘定とは、運用実績にかかわらず一定の給付が保証されるタイプの保険商品の資産を管理・運用するための勘定のことをいい…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "一般口座",
+    "reading": "いっぱんこうざ",
+    "definition": "一般口座とは、特定口座やNISA口座で管理していない上場株式等を管理する口座のことです。一般口座で管理している株式等…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "一般信用",
+    "reading": "いっぱんしんよう",
+    "definition": "信用取引には制度信用と一般信用の2種類があり、一般信用取引は金利、貸株料および返済期限等を証券会社が顧客との合意に基…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "一般担保付社債",
+    "reading": "いっぱんたんぽつきしゃさい",
+    "definition": "一般担保付社債とは、発行体の全財産について、ほかの債権よりも優先的に弁済される権利がつけられている社債のことです。担…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "一般NISA",
+    "reading": "いっぱんニーサ",
+    "definition": "NISAとは、2014年1月1日よりスタートした少額投資非課税制度のことで、イギリスの個人貯蓄口座「ISA（Indi…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "移動平均線",
+    "reading": "いどうへいきんせん",
+    "definition": "移動平均線とは、ある一定期間の価格から平均値を計算し、折れ線グラフで表したものです。その日を含めた過去何日間（または…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "イベント・ドリブン",
+    "reading": "イベント・ドリブン",
+    "definition": "イベント・ドリブン（Event Ｄriven）とは、個別企業にとって重要な出来事（コーポレートイベント）を利用して収…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "遺留分",
+    "reading": "いりゅうぶん",
+    "definition": "遺留分とは、民法によって兄弟姉妹（甥・姪）以外の法定相続人に保障された相続財産の最低限度の割合のことをいいます。本来…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "遺留分侵害額の請求",
+    "reading": "いりゅうぶんしんがいがくのせいきゅう",
+    "definition": "遺留分を侵害された相続人は、侵害した受遺者や受贈者等に対して、その侵害額に相当する金銭の支払いを請求することができま…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "インカムゲイン",
+    "reading": "インカムゲイン",
+    "definition": "インカムゲインとは、株式や債券等の資産を保有中に得られる収益のことです。たとえば、株式では配当金、債券では利子、不動…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "インサイダー取引",
+    "reading": "インサイダーとりひき",
+    "definition": "インサイダー取引とは、企業の内部情報に接する立場にある会社役員・従業員・大株主・取引先等が、立場を利用して会社の経営…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "陰線",
+    "reading": "いんせん",
+    "definition": "株価の動きをローソク足にしたとき、始値に比べて終値が安かった場合に一般的に黒で表示し、その線を陰線といいます。逆に、…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "インターバンク市場",
+    "reading": "インターバンクしじょう",
+    "definition": "外国為替取引では、銀行等の金融機関や大手証券会社がコンピューター等を通じて取引を行っています。この金融機関のみに参加…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "インデックス",
+    "reading": "インデックス",
+    "definition": "インデックス（Index）とは、市場の動きを示す指数のことです。たとえば、日経平均株価やTOPIX（東証株価指数）は…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "インデックス運用",
+    "reading": "インデックスうんよう",
+    "definition": "インデックス運用とは、目安となる指数（ベンチマーク）に連動した運用スタイルのことです。たとえば、日本株で運用する投資…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "インデックス年金",
+    "reading": "インデックスねんきん",
+    "definition": "インデックス年金とは特定の指数（インデックス）の上昇に応じて、積立金が増加する仕組みの年金保険のことを指します。指数…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "インデックスファンド",
+    "reading": "インデックスファンド",
+    "definition": "インデックスとは指標、ファンドとは投資信託のことで、インデックスファンドとは株価指数等の指標に連動した運用を目指す投…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "インバース型上場投資信託",
+    "reading": "インバースがたじょうじょうとうししんたく",
+    "definition": "インバース（Inverse） とは「逆の、反対の」という意味で、上場投資信託は特定の指標に連動することを目指して運用…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "インバウンド消費",
+    "reading": "インバウンドしょうひ",
+    "definition": "インバウンド（Inbound）とは「入ってくる」という意味で、これが転じて海外から日本を訪れる外国人を指し、彼らによ…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "インパクト投資",
+    "reading": "インパクトとうし",
+    "definition": "インパクト投資は、2007年にロックフェラー財団が主導した国際会議で誕生した言葉です。企業や組織などへの投資を通じて…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "インフレ",
+    "reading": "インフレ",
+    "definition": "インフレとはインフレーション（Inflation）の略で、私たちが普段買っている日用品やサービスの値段（物価）が上が…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "インフレターゲット",
+    "reading": "インフレターゲット",
+    "definition": "インフレターゲット（Inflation Targeting）とは、政府や中央銀行が物価上昇率（インフレ率）に一定の数…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "インボイス制度",
+    "reading": "インボイスせいど",
+    "definition": "インボイス制度とは、複数税率に対応した消費税の仕入税額控除の方式のことで、2023年10月1日から導入されました。正…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "50音",
+    "reading": "",
+    "definition": "",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "アルファベット・その他",
+    "reading": "",
+    "definition": "",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "株式に関する用語",
+    "reading": "",
+    "definition": "",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "投資信託に関する用語",
+    "reading": "",
+    "definition": "",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "債券に関する用語",
+    "reading": "",
+    "definition": "",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "FXに関する用語",
+    "reading": "",
+    "definition": "",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "ラップ口座に関する用語",
+    "reading": "",
+    "definition": "",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "年金・保険に関する用語",
+    "reading": "",
+    "definition": "",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "制度に関する用語",
+    "reading": "",
+    "definition": "",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "相続に関する用語",
+    "reading": "",
+    "definition": "",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "その他の経済に関する用語",
+    "reading": "",
+    "definition": "",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "ウイリアムズ%R",
+    "reading": "ウィリアムズ・パーセント・アール",
+    "definition": "ウイリアムズ％Rは、「買われ過ぎ」や「売られ過ぎ」を示すオシレーター系のテクニカル指標です。当日の終値が一定期間のレ…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "受渡",
+    "reading": "うけわたし",
+    "definition": "受渡とは有価証券の売買が成立（約定）した際、代金のやり取りをする（売買代金を決済する）ことを指します。株式の取引の場…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "内出来",
+    "reading": "うちでき",
+    "definition": "発注した注文のうち、一部だけが約定することをいいます。たとえば、1,000株の買い注文を入れ、そのうち400株だけが…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "売上総利益",
+    "reading": "うりあげそうりえき",
+    "definition": "売上総利益とは、売り上げから商品の原価を引いた利益のことで、粗利（あらり）、粗利益（あらりえき）ともいいます。売上総…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "売り禁",
+    "reading": "貸借取引の申込停止措置",
+    "definition": "証券金融会社が行う規制のひとつで、貸借銘柄において、新規の信用売り（カラ売り）および信用買いの現引きが禁止される措置…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "売り気配",
+    "reading": "うりけはい",
+    "definition": "市場の動きが、売り物ばかりでそれに見合う買い注文がなく、値がつかない状態のこと。「ヤリ気配」とも呼ばれます。",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "売り残",
+    "reading": "うりざん",
+    "definition": "信用取引において、信用売り（「空売り」とも呼ばれます）をされて、まだ決済（買い戻し、または現渡し）されずに残っている…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "売出し",
+    "reading": "うりだし",
+    "definition": "すでに発行された有価証券の売り付けの申し込み、またはその買い付けの申し込みの勧誘を多数の者（50名以上）を相手方とし…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "売出価格",
+    "reading": "うりだしかかく",
+    "definition": "株式等の売出しに際して、投資者が株式等を購入する際の1株あたりの金額のことで、ブックビルディングの需要状況等を総合的…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "上値",
+    "reading": "うわね",
+    "definition": "株式市場等のマーケットにおいて、現在の株価よりもさらに高い株価のことを指します。まだ株価の上がる余地のある場合を「上…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "上値抵抗線",
+    "reading": "うわねていこうせん",
+    "definition": "上値抵抗線（レジスタンスライン）は、株価の上値を抑えているライン（価格帯）のことで、主にテクニカル分析に使われます。…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "上放れ",
+    "reading": "うわばなれ",
+    "definition": "株価が一気に大きく上昇することをいいます。「うわばなれ・うわっぱなれ・うえばなれ」などと読みます。株価がそれまでの推…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "運用会社",
+    "reading": "うんようがいしゃ",
+    "definition": "運用会社とは、投資信託の運用の指図を行う会社のことで、投資信託会社、投信会社等とも呼ばれています。運用会社では、投資…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "運用関係費用",
+    "reading": "うんようかんけいひよう",
+    "definition": "変額年金や変額保険は投資信託等の金融商品で資産を運用しており、その投資信託の管理・運用に必要な費用です。運用している…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "運用報告書",
+    "reading": "うんようほうこくしょ",
+    "definition": "運用報告書とは、投資信託の運用成績や資産状況等を報告する文書のことです。 運用方針等が書かれた目論見書とともに重要な…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "運用レポート",
+    "reading": "うんようレポート",
+    "definition": "運用レポートとは、投資信託を運用している運用会社が発行する投資家向けの書類のひとつです。これまでの運用成績や累積リタ…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "50音",
+    "reading": "",
+    "definition": "",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "アルファベット・その他",
+    "reading": "",
+    "definition": "",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "株式に関する用語",
+    "reading": "",
+    "definition": "",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "投資信託に関する用語",
+    "reading": "",
+    "definition": "",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "債券に関する用語",
+    "reading": "",
+    "definition": "",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "FXに関する用語",
+    "reading": "",
+    "definition": "",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "ラップ口座に関する用語",
+    "reading": "",
+    "definition": "",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "年金・保険に関する用語",
+    "reading": "",
+    "definition": "",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "制度に関する用語",
+    "reading": "",
+    "definition": "",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "相続に関する用語",
+    "reading": "",
+    "definition": "",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "その他の経済に関する用語",
+    "reading": "",
+    "definition": "",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "永久劣後債",
+    "reading": "AT1債",
+    "definition": "永久劣後債（AT1債）は、金融機関が発行する証券のひとつで、株式と債券の中間的な性質を持った証券です。一般的な社債に…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "営業利益",
+    "reading": "えいぎょうりえき",
+    "definition": "営業利益とは、損益計算書上に表される利益のひとつで、企業が本業で稼いだ利益を表します。売上高から売上原価を差し引いた…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "益出し",
+    "reading": "えきだし",
+    "definition": "益出しとは、購入した価格（簿価）より時価が値上がりしている時点で売却し、利益を確定することをいいます。主に、企業が決…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "エコファンド",
+    "reading": "エコファンド",
+    "definition": "環境に配慮した経営を行っている企業を中心に投資する投資信託のことです。収益率や成長性等、従来の投資尺度にかかわらず、…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "エマージング市場",
+    "reading": "エマージングしじょう",
+    "definition": "エマージング市場とは、経済が発展途上にある国や地域の金融市場のことで、新興国市場とも呼ばれます。エマージング（eme…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "エリオット波動論",
+    "reading": "エリオットはどうろん",
+    "definition": "エリオット波動論は、「相場には共通のパターンがあり、5つの上昇波と3つの下降波で1つのサイクルが形成される」という考…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "円キャリー取引",
+    "reading": "えんキャリーとりひき",
+    "definition": "低金利通貨である円で借り入れをして高金利国の金融資産等で運用し、運用益に加えて金利の利ざやを獲得しようとする取引です…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "縁故債",
+    "reading": "えんこさい",
+    "definition": "債券の分類方法のひとつで、発行体と縁故関係のある特定の者等を対象として発行される債券のことを指します。縁故債は「私募…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "エンジェル税制",
+    "reading": "エンジェルぜいせい",
+    "definition": "エンジェル税制とは、ベンチャー企業への投資を促進することを目的に導入された優遇税制（ベンチャー企業投資促進税制）です…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "エンジェル投資家",
+    "reading": "エンジェルとうしか",
+    "definition": "エンジェル投資家は、起業して間もない企業に資金を出資する投資家のことです。通常、企業のスタートアップにはある程度の資…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "延滞税",
+    "reading": "えんたいぜい",
+    "definition": "税金の一部または全部を期限までに納税しない場合に課せられる税金です。",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "円高",
+    "reading": "えんだか",
+    "definition": "円高とは、他国通貨に対する円の価値が高くなることです。日本円はかつて、１ドル＝360円という固定相場制でしたが、19…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "エンディングノート",
+    "reading": "エンディングノート",
+    "definition": "主に人生の終末期に自身に生じる万一のことを考え、事前に家族や友人へのメッセージを書いたり、医療・介護や葬儀の希望等を…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "エンハンスト運用",
+    "reading": "エンハンストうんよう",
+    "definition": "エンハンスト運用とは、基本的に指数等に連動する運用を行いながらも、わずかにアクティブ運用を加えることで指数を上回るリ…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "エンベロープ",
+    "reading": "エンベロープ",
+    "definition": "エンベロープはチャート上に描かれる移動平均線に対して、上下に一定の乖離幅（％）や値幅に引いたラインのことです。価格が…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "円安",
+    "reading": "えんやす",
+    "definition": "円安とは、他国通貨に対する円の価値が低下することです。日本円はかつて、１ドル＝360円という固定相場制でしたが、19…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "50音",
+    "reading": "",
+    "definition": "",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "アルファベット・その他",
+    "reading": "",
+    "definition": "",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "株式に関する用語",
+    "reading": "",
+    "definition": "",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "投資信託に関する用語",
+    "reading": "",
+    "definition": "",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "債券に関する用語",
+    "reading": "",
+    "definition": "",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "FXに関する用語",
+    "reading": "",
+    "definition": "",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "ラップ口座に関する用語",
+    "reading": "",
+    "definition": "",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "年金・保険に関する用語",
+    "reading": "",
+    "definition": "",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "制度に関する用語",
+    "reading": "",
+    "definition": "",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "相続に関する用語",
+    "reading": "",
+    "definition": "",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "その他の経済に関する用語",
+    "reading": "",
+    "definition": "",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "追証",
+    "reading": "おいしょう",
+    "definition": "追加保証金のことを指します。信用取引や株価指数先物取引、FX等、保証金を担保として行う取引の場合、一定の維持率（委託…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "黄金株",
+    "reading": "おうごんかぶ",
+    "definition": "黄金株とは、株主総会で会社の合併等の重要議案を否決できる特別な株式のことで、拒否権付き株式ともいわれます。株式を買い…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "応札倍率",
+    "reading": "おうさつばいりつ",
+    "definition": "応札倍率とは、競争入札の実施による国債入札等で「応札額」（分子）を「落札額」（分母）で割った値（倍率）です。落札額に…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "大型株",
+    "reading": "おおがたかぶ",
+    "definition": "東京証券取引所では、TOPIX（東証株価指数）を補完する「規模別株価指数」の算出において、TOPIX構成銘柄の中から…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "大株主",
+    "reading": "おおかぶぬし",
+    "definition": "大株主とは、企業の株式の大多数を保有している株主のことで、発行済み株式に対する保有株の比率（持ち株比率）が高い株主を…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "オーバーアロットメント",
+    "reading": "オーバーアロットメント",
+    "definition": "株式等の募集や売出しに際して、これとは別に、需要状況に応じて主幹事証券会社が売出人となって行う売出しを「オーバーアロ…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "オーバーシュート",
+    "reading": "オーバーシュート",
+    "definition": "相場が過剰に反応して、行き過ぎた動きとなること。たとえば、経済指標等の発表で投資家の売買が活発になって株式市場や外国…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "オーバーナイト・ポジション",
+    "reading": "オーバーナイト・ポジション",
+    "definition": "オーバーナイト・ポジションとは、その日のうちに決済せずに翌日に持ち越したポジション（建玉）を指します。FXでは、ポジ…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "オーバーレイ",
+    "reading": "オーバーレイ",
+    "definition": "オーバーレイとは、ひとつの投資信託の中で株や債券等の運用と、先物取引等のデリバティブの運用とを別々に行う手法のことで…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "オープン・エンド型投資信託",
+    "reading": "オープン･エンドがたとうししんたく",
+    "definition": "オープン・エンド型投資信託とは、いつでも換金可能な投資信託のことです。国内の多くの投資信託はオープン・エンド型投資信…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "億り人／億トレ",
+    "reading": "おくりびと／おくトレ",
+    "definition": "億り人とは、株やFX、暗号資産等の取引で資産1億円を築いた投資家を指します。また、株やFX等の専業トレーダーの億り人…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "押し目買い",
+    "reading": "おしめがい",
+    "definition": "株価が上昇している局面で、一時的に株価が下落したタイミングを見計らって買いを入れる手法です。株価が下落することを相場…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "踊り場",
+    "reading": "おどりば",
+    "definition": "踊り場とは上昇してきた株価が一服して足踏みしたような状態になることで、「調整」ともいわれます。",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "オファード・レート",
+    "reading": "オファードレート",
+    "definition": "オファード・レートとは、インターバンク市場（銀行間取引市場）において、資金の貸し手または外国為替の売り手が呈示するレ…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "オフショア人民元／CNH",
+    "reading": "オフショアじんみんげん／シーエヌエイチ",
+    "definition": "オフショア人民元（CNH）とは、中国の通貨である人民元のうち、香港、シンガポール、イギリス等の中国本土外の居住者が取…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "オフショアファンド",
+    "reading": "オフショアファンド",
+    "definition": "ファンド規制や税制の緩やかな地域に設立される（ファンドの籍を置く）ファンドの総称。オフショア（Off-Shore）を…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "オプション取引",
+    "reading": "オプションとりひき",
+    "definition": "オプション取引とは、証券や通貨または商品等（原資産）を将来の決められた期日までに、そのときの市場価格に関係なくあらか…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "織り込み済み",
+    "reading": "おりこみずみ",
+    "definition": "株価に影響のある材料が投資家の間で周知され、株価がすでにその影響を受けてしまっている状態を指します。",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "オルタナティブ投資",
+    "reading": "オルタナティブとうし",
+    "definition": "オルタナティブ投資とは、上場株式や債券といった伝統的資産と呼ばれるもの以外の新しい投資対象や投資手法のことをいいます…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "オルトコイン",
+    "reading": "オルトコイン",
+    "definition": "オルトコイン（アルトコイン）は、ビットコイン以外の暗号資産の総称です。代表的なものとして、リップル、イーサリアムがあ…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "終値",
+    "reading": "おわりね",
+    "definition": "終値とは、その期間で最後についた価格のことをいいます。終値に対し、期間の最初についた価格のことを始値といいます。",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "オンショア人民元／CNY",
+    "reading": "オンショアじんみんげん／シーエヌワイ",
+    "definition": "オンショア人民元（CNY）とは、中国の通貨である人民元のうち、中国本土の居住者が取引する国内（オンショア）市場（上海…",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "50音",
+    "reading": "",
+    "definition": "",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "アルファベット・その他",
+    "reading": "",
+    "definition": "",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "株式に関する用語",
+    "reading": "",
+    "definition": "",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "投資信託に関する用語",
+    "reading": "",
+    "definition": "",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "債券に関する用語",
+    "reading": "",
+    "definition": "",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "FXに関する用語",
+    "reading": "",
+    "definition": "",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "ラップ口座に関する用語",
+    "reading": "",
+    "definition": "",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "年金・保険に関する用語",
+    "reading": "",
+    "definition": "",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "制度に関する用語",
+    "reading": "",
+    "definition": "",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "相続に関する用語",
+    "reading": "",
+    "definition": "",
+    "source": "SMBC Nikko"
+  },
+  {
+    "term": "その他の経済に関する用語",
+    "reading": "",
+    "definition": "",
+    "source": "SMBC Nikko"
+  }
+]
