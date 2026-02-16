@@ -4,7 +4,6 @@ from bs4 import BeautifulSoup
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 import os
-import json
 import time
 import re
 from urllib.parse import urljoin
@@ -31,8 +30,6 @@ class SMBCNikkoScraper(BaseScraper):
     def scrape_all(self):
         print("Scraping SMBC Nikko...")
         results = []
-        # chars in Japanese syllabary (a, i, u, e, o, ka, ki, ...)
-        # Based on their URL structure
         url_chars = ['a', 'i', 'u', 'e', 'o', 'ka', 'ki', 'ku', 'ke', 'ko', 'sa', 'si', 'su', 'se', 'so', 'ta', 'ti', 'tu', 'te', 'to', 'na', 'ni', 'nu', 'ne', 'no', 'ha', 'hi', 'hu', 'he', 'ho', 'ma', 'mi', 'mu', 'me', 'mo', 'ya', 'yu', 'yo', 'ra', 'ri', 'ru', 're', 'ro', 'wa']
         for char in url_chars:
             url = f"https://www.smbcnikko.co.jp/terms/japan/{char}/index.html"
@@ -62,9 +59,8 @@ class OkasanScraper(BaseScraper):
         soup = self.get_soup(index_url)
         if not soup: return []
         
-        # Find all detail links
         links = soup.find_all('a', href=lambda x: x and 'datail' in x)
-        for link in links[:50]: # Limit for demo, can be removed for full run
+        for link in links[:30]: # Limit for testing
             detail_url = urljoin("https://www.okasan-online.co.jp", link['href'])
             detail_soup = self.get_soup(detail_url)
             if not detail_soup: continue
@@ -72,11 +68,8 @@ class OkasanScraper(BaseScraper):
             term_el = detail_soup.find('h2')
             if not term_el: continue
             term = term_el.get_text(strip=True)
-            
-            # Definition is the paragraphs after h2
             paragraphs = detail_soup.select('#main_content p')
             definition = " ".join([p.get_text(strip=True) for p in paragraphs if p.get_text(strip=True)])
-            
             results.append({"term": term, "reading": "", "definition": definition, "src": "Okasan"})
         return results
 
@@ -91,44 +84,105 @@ class RakutenScraper(BaseScraper):
             if not soup: continue
             
             links = soup.find_all('a', href=lambda x: x and '.html' in x and '/dictionary/j/' in x)
-            for link in links[:20]:
+            for link in links[:10]:
                 detail_url = urljoin(url, link['href'])
                 detail_soup = self.get_soup(detail_url)
                 if not detail_soup: continue
-                
                 term_el = detail_soup.find('h1', class_='c-title-page')
                 if not term_el: continue
                 term = term_el.get_text(strip=True)
-                
-                # Reading table
                 reading = ""
                 table = detail_soup.find('table', class_='c-table')
                 if table:
                     reading_el = table.find('td')
                     if reading_el: reading = reading_el.get_text(strip=True)
-                
-                # Definition
                 content = detail_soup.find('div', class_='pos-r') or detail_soup.find('div', id='contents')
-                if content:
-                    paragraphs = content.find_all('p')
-                    definition = " ".join([p.get_text(strip=True) for p in paragraphs if len(p.get_text(strip=True)) > 20])
-                else:
-                    definition = ""
-                
+                definition = " ".join([p.get_text(strip=True) for p in content.find_all('p') if len(p.get_text(strip=True)) > 15]) if content else ""
                 if term and definition:
                     results.append({"term": term, "reading": reading, "definition": definition, "src": "Rakuten"})
+        return results
+
+class NomuraScraper(BaseScraper):
+    def scrape_all(self):
+        print("Scraping Nomura...")
+        results = []
+        url_chars = ['a', 'i', 'u', 'e', 'o', 'ka', 'ki', 'ku', 'ke', 'ko', 'sa', 'si', 'su', 'se', 'so', 'ta', 'ti', 'tu', 'te', 'to', 'na', 'ni', 'nu', 'ne', 'no', 'ha', 'hi', 'hu', 'he', 'ho', 'ma', 'mi', 'mu', 'me', 'mo', 'ya', 'yu', 'yo', 'ra', 'ri', 'ru', 're', 'ro', 'wa']
+        for char in url_chars:
+            url = f"https://www.nomura.co.jp/terms/{char}_index.html"
+            soup = self.get_soup(url)
+            if not soup: continue
+            
+            items = soup.find_all('li', class_='terms-list__item')
+            for item in items:
+                link = item.find('a')
+                if link:
+                    term = link.get_text(strip=True)
+                    detail_url = urljoin(url, link['href'])
+                    # We could scrape detail, but for Nomura, the list might have previews.
+                    # Let's hit the detail page for quality.
+                    detail_soup = self.get_soup(detail_url)
+                    if detail_soup:
+                        reading_el = detail_soup.find('p', class_='terms-detail__reading')
+                        reading = reading_el.get_text(strip=True).strip('（）') if reading_el else ""
+                        def_el = detail_soup.find('div', class_='terms-detail__body')
+                        definition = def_el.get_text(strip=True) if def_el else ""
+                        results.append({"term": term, "reading": reading, "definition": definition, "src": "Nomura"})
+        return results
+
+class DaiwaScraper(BaseScraper):
+    def scrape_all(self):
+        print("Scraping Daiwa...")
+        results = []
+        # Daiwa uses a complex navigation, but let's try the direct syllabary index if possible.
+        # Actually, they have an index page: https://www.daiwa.jp/glossary/
+        url = "https://www.daiwa.jp/glossary/"
+        soup = self.get_soup(url)
+        if not soup: return []
+        
+        links = soup.select('.glossary_list a')
+        for link in links[:30]:
+            detail_url = urljoin(url, link['href'])
+            detail_soup = self.get_soup(detail_url)
+            if not detail_soup: continue
+            
+            term_el = detail_soup.find('h1')
+            if not term_el: continue
+            term = term_el.get_text(strip=True)
+            
+            reading_el = detail_soup.find('p', class_='reading')
+            reading = reading_el.get_text(strip=True) if reading_el else ""
+            
+            def_el = detail_soup.find('div', class_='explanation')
+            definition = def_el.get_text(strip=True) if def_el else ""
+            
+            results.append({"term": term, "reading": reading, "definition": definition, "src": "Daiwa"})
+        return results
+
+class MUFGScraper(BaseScraper):
+    def scrape_all(self):
+        print("Scraping MUFG...")
+        results = []
+        url_chars = ['a', 'i', 'u', 'e', 'o', 'ka', 'ki', 'ku', 'ke', 'ko', 'sa', 'shi', 'su', 'se', 'so', 'ta', 'chi', 'tsu', 'te', 'to', 'na', 'ni', 'nu', 'ne', 'no', 'ha', 'hi', 'fu', 'he', 'ho', 'ma', 'mi', 'mu', 'me', 'mo', 'ya', 'yu', 'yo', 'ra', 'ri', 'ru', 're', 'ro', 'wa']
+        for char in url_chars:
+            url = f"https://www.sc.mufg.jp/learn/terms/{char}.html"
+            soup = self.get_soup(url)
+            if not soup: continue
+            
+            items = soup.select('.terms_list dt')
+            for dt in items:
+                term = dt.get_text(strip=True)
+                dd = dt.find_next_sibling('dd')
+                definition = dd.get_text(strip=True) if dd else ""
+                results.append({"term": term, "reading": "", "definition": definition, "src": "MUFG"})
         return results
 
 # --- Utility Functions ---
 
 def rephrase_definition(definition):
     if not definition: return ""
-    # Basic rearrangement to make it unique
     new_def = definition.replace("。です。", "。").replace("のことです。", "を意味します。")
     new_def = re.sub(r'といいます$', 'と呼ばれます。', new_def)
     new_def = re.sub(r'である$', 'を指します。', new_def)
-    
-    # Trim if too long
     if len(new_def) > 300:
         new_def = new_def[:300] + "..."
     return new_def
@@ -170,7 +224,10 @@ def main():
     scrapers = [
         SMBCNikkoScraper(),
         OkasanScraper(),
-        RakutenScraper()
+        RakutenScraper(),
+        NomuraScraper(),
+        DaiwaScraper(),
+        MUFGScraper()
     ]
     
     for scraper in scrapers:
