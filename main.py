@@ -188,12 +188,27 @@ def rephrase_definition(definition):
     return new_def
 
 def update_spreadsheet(all_data):
+    import base64
     scope = ['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/auth/drive']
     creds_path = '/Users/matsuyamakoichi/service-account.json' if os.path.exists('/Users/matsuyamakoichi/service-account.json') else 'service-account.json'
     
     if not os.path.exists(creds_path):
-        print("Credentials not found. Skipping sheet update.")
-        return
+        creds_json = os.environ.get('GCP_SERVICE_ACCOUNT_JSON')
+        if creds_json:
+            try:
+                # Try base64 decoding first
+                decoded = base64.b64decode(creds_json).decode('utf-8')
+                with open('service-account.json', 'w') as f:
+                    f.write(decoded)
+                creds_path = 'service-account.json'
+            except Exception:
+                # If not base64, assume it's raw JSON
+                with open('service-account.json', 'w') as f:
+                    f.write(creds_json)
+                creds_path = 'service-account.json'
+        else:
+            print("Credentials not found. Skipping sheet update.")
+            return
 
     creds = ServiceAccountCredentials.from_json_keyfile_name(creds_path, scope)
     client = gspread.authorize(creds)
