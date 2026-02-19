@@ -176,7 +176,7 @@ export default function GlossaryUI() {
                         </div>
 
                         <div className="flex-grow">
-                            <p className="text-[#444444] text-base leading-relaxed font-medium line-clamp-[8]">
+                            <p className="text-[#444444] text-xl leading-relaxed font-medium line-clamp-[8]">
                                 {item.definition}
                             </p>
                         </div>
