@@ -185,9 +185,6 @@ export default function GlossaryUI() {
                             <span className="bg-slate-50 px-2 py-1 rounded border border-slate-100">
                                 索引: {item.initial}
                             </span>
-                            <div className="text-[#1a4696] flex items-center">
-                                詳細 <ChevronRight className="h-4 w-4 ml-0.5" />
-                            </div>
                         </div>
                     </div>
                 ))}
