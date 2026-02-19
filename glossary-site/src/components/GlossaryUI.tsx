@@ -64,7 +64,7 @@ export default function GlossaryUI() {
     }, [filteredData, currentPage]);
 
     const scrollToTop = () => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+        window.scrollTo({ top: 0, behavior: 'auto' });
     };
 
     return (
