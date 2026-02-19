@@ -79,7 +79,10 @@ export default function GlossaryUI() {
                             className="w-full bg-transparent border-0 focus:ring-0 text-slate-900 py-3 px-3 text-xl placeholder-slate-400"
                             placeholder="調べたい用語を入力..."
                             value={searchQuery}
-                            onChange={(e) => setSearchQuery(e.target.value)}
+                            onChange={(e) => {
+                                setSearchQuery(e.target.value);
+                                if (e.target.value) setSelectedInitial(null);
+                            }}
                         />
                     </div>
                 </div>
