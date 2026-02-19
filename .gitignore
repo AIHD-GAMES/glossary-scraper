@@ -9,6 +9,10 @@ venv/
 # Secrets
 service-account.json
 *.json
+!glossary-site/**/*.json
+!package.json
+!package-lock.json
+!tsconfig.json
 !requirements.txt
 !README.md
 !smbc_terms.json
