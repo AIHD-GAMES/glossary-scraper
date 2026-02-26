@@ -139,7 +139,10 @@ export default function GlossaryUI() {
             <div className="mb-10">
                 <div className="flex flex-wrap justify-center gap-2">
                     <button
-                        onClick={() => setSelectedInitial(null)}
+                        onClick={() => {
+                            setSelectedInitial(null);
+                            setSearchQuery('');
+                        }}
                         className={cn(
                             "px-6 py-2 rounded-lg text-lg font-bold transition-all border-2",
                             !selectedInitial
@@ -152,7 +155,10 @@ export default function GlossaryUI() {
                     {INITIALS.map((initial) => (
                         <button
                             key={initial}
-                            onClick={() => setSelectedInitial(initial)}
+                            onClick={() => {
+                                setSelectedInitial(initial);
+                                setSearchQuery('');
+                            }}
                             className={cn(
                                 "w-12 h-12 flex items-center justify-center rounded-lg text-lg font-bold transition-all border-2",
                                 selectedInitial === initial
