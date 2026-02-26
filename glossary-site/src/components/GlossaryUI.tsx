@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useMemo } from 'react';
-import { Search, ChevronRight, Hash, ChevronLeft } from 'lucide-react';
+import { Search, ChevronRight, Hash, ChevronLeft, ChevronDown } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { GlossaryTerm } from '@/types';
 import glossaryDataRaw from '@/data/glossary.json';
@@ -29,6 +29,57 @@ const INITIALS = [
     'ら', 'り', 'る', 'れ', 'ろ',
     'わ', 'A-Z'
 ];
+
+function TermCard({ item }: { item: GlossaryTerm }) {
+    const [isExpanded, setIsExpanded] = useState(false);
+
+    return (
+        <div
+            className="flex flex-col bg-white border border-slate-200 rounded-xl p-6 transition-all hover:border-[#1a4696]/30 hover:shadow-md cursor-pointer"
+            onClick={() => setIsExpanded(!isExpanded)}
+        >
+            <div className="mb-4">
+                <span className="text-xs font-bold text-[#1a4696] uppercase tracking-wide mb-1 block">
+                    {item.reading}
+                </span>
+                <h3 className="text-2xl font-bold text-[#1a4696] leading-tight">
+                    {item.term}
+                </h3>
+            </div>
+
+            <div className="flex-grow">
+                <p
+                    className={cn(
+                        "text-[#444444] text-xl leading-relaxed font-medium whitespace-pre-wrap transition-all",
+                        !isExpanded && "line-clamp-3"
+                    )}
+                    style={{
+                        display: !isExpanded ? '-webkit-box' : 'block'
+                    }}
+                >
+                    {item.definition}
+                </p>
+                <div className="mt-3 text-sm font-bold text-[#1a4696] flex items-center justify-end">
+                    {isExpanded ? (
+                        <span className="flex items-center bg-slate-50 px-3 py-1.5 rounded-full">
+                            閉じる
+                        </span>
+                    ) : (
+                        <span className="flex items-center bg-slate-50 px-3 py-1.5 rounded-full hover:bg-slate-100 transition-colors">
+                            続きを読む <ChevronDown className="h-4 w-4 ml-1" />
+                        </span>
+                    )}
+                </div>
+            </div>
+
+            <div className="mt-4 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-slate-400">
+                <span className="bg-slate-50 px-2 py-1 rounded border border-slate-100">
+                    索引: {item.initial}
+                </span>
+            </div>
+        </div>
+    );
+}
 
 export default function GlossaryUI() {
     const [searchQuery, setSearchQuery] = useState('');
@@ -162,31 +213,7 @@ export default function GlossaryUI() {
             {/* Terms Grid - Moderately large, high contrast, branded */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
                 {paginatedData.map((item) => (
-                    <div
-                        key={item.id}
-                        className="flex flex-col bg-white border border-slate-200 rounded-xl p-6 transition-all hover:border-[#1a4696]/30 hover:shadow-md"
-                    >
-                        <div className="mb-4">
-                            <span className="text-xs font-bold text-[#1a4696] uppercase tracking-wide mb-1 block">
-                                {item.reading}
-                            </span>
-                            <h3 className="text-2xl font-bold text-[#1a4696] leading-tight">
-                                {item.term}
-                            </h3>
-                        </div>
-
-                        <div className="flex-grow">
-                            <p className="text-[#444444] text-xl leading-relaxed font-medium whitespace-pre-wrap">
-                                {item.definition}
-                            </p>
-                        </div>
-
-                        <div className="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-slate-400">
-                            <span className="bg-slate-50 px-2 py-1 rounded border border-slate-100">
-                                索引: {item.initial}
-                            </span>
-                        </div>
-                    </div>
+                    <TermCard key={item.id} item={item} />
                 ))}
             </div>
 
