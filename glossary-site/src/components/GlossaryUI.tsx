@@ -1,7 +1,7 @@
 "use client";
 
-import React, { useState, useMemo } from 'react';
-import { Search, ChevronRight, Hash, ChevronLeft, ChevronDown } from 'lucide-react';
+import React, { useState, useMemo, useEffect } from 'react';
+import { Search, ChevronRight, Hash, ChevronLeft, X } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { GlossaryTerm } from '@/types';
 import glossaryDataRaw from '@/data/glossary.json';
@@ -30,49 +30,33 @@ const INITIALS = [
     'わ', 'A-Z'
 ];
 
-function TermCard({ item }: { item: GlossaryTerm }) {
-    const [isExpanded, setIsExpanded] = useState(false);
-
+function TermCard({ item, onClick }: { item: GlossaryTerm, onClick: () => void }) {
     return (
         <div
-            className="flex flex-col bg-white border border-slate-200 rounded-xl p-6 transition-all hover:border-[#1a4696]/30 hover:shadow-md cursor-pointer"
-            onClick={() => setIsExpanded(!isExpanded)}
+            className="flex flex-col bg-white border border-slate-200 rounded-xl p-6 transition-all hover:border-[#1a4696]/30 hover:shadow-md cursor-pointer h-[280px]"
+            onClick={onClick}
         >
             <div className="mb-4">
                 <span className="text-xs font-bold text-[#1a4696] uppercase tracking-wide mb-1 block">
                     {item.reading}
                 </span>
-                <h3 className="text-2xl font-bold text-[#1a4696] leading-tight">
+                <h3 className="text-2xl font-bold text-[#1a4696] leading-tight line-clamp-2">
                     {item.term}
                 </h3>
             </div>
 
             <div className="flex-grow">
-                <p
-                    className={cn(
-                        "text-[#444444] text-xl leading-relaxed font-medium whitespace-pre-wrap transition-all",
-                        !isExpanded && "line-clamp-3"
-                    )}
-                    style={{
-                        display: !isExpanded ? '-webkit-box' : 'block'
-                    }}
-                >
+                <p className="text-[#444444] text-lg leading-relaxed font-medium line-clamp-3">
                     {item.definition}
                 </p>
                 <div className="mt-3 text-sm font-bold text-[#1a4696] flex items-center justify-end">
-                    {isExpanded ? (
-                        <span className="flex items-center bg-slate-50 px-3 py-1.5 rounded-full">
-                            閉じる
-                        </span>
-                    ) : (
-                        <span className="flex items-center bg-slate-50 px-3 py-1.5 rounded-full hover:bg-slate-100 transition-colors">
-                            続きを読む <ChevronDown className="h-4 w-4 ml-1" />
-                        </span>
-                    )}
+                    <span className="flex items-center bg-slate-50 px-3 py-1.5 rounded-full hover:bg-slate-100 transition-colors">
+                        もっと見る
+                    </span>
                 </div>
             </div>
 
-            <div className="mt-4 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-slate-400">
+            <div className="mt-auto pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-slate-400">
                 <span className="bg-slate-50 px-2 py-1 rounded border border-slate-100">
                     索引: {item.initial}
                 </span>
@@ -85,6 +69,7 @@ export default function GlossaryUI() {
     const [searchQuery, setSearchQuery] = useState('');
     const [selectedInitial, setSelectedInitial] = useState<string | null>(null);
     const [currentPage, setCurrentPage] = useState(1);
+    const [selectedTerm, setSelectedTerm] = useState<GlossaryTerm | null>(null);
     const ITEMS_PER_PAGE = 100;
 
     const filteredData = useMemo(() => {
@@ -107,6 +92,17 @@ export default function GlossaryUI() {
     useMemo(() => {
         setCurrentPage(1);
     }, [searchQuery, selectedInitial]);
+
+    useEffect(() => {
+        if (selectedTerm) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'unset';
+        }
+        return () => {
+            document.body.style.overflow = 'unset';
+        };
+    }, [selectedTerm]);
 
     const totalPages = Math.ceil(filteredData.length / ITEMS_PER_PAGE);
     const paginatedData = useMemo(() => {
@@ -213,7 +209,7 @@ export default function GlossaryUI() {
             {/* Terms Grid - Moderately large, high contrast, branded */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
                 {paginatedData.map((item) => (
-                    <TermCard key={item.id} item={item} />
+                    <TermCard key={item.id} item={item} onClick={() => setSelectedTerm(item)} />
                 ))}
             </div>
 
@@ -263,6 +259,50 @@ export default function GlossaryUI() {
                     <p className="text-slate-500 max-w-sm mx-auto">
                         キーワードを変えてもう一度お試しください。
                     </p>
+                </div>
+            )}
+
+            {/* Modal Overlay */}
+            {selectedTerm && (
+                <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/40 backdrop-blur-sm"
+                    onClick={() => setSelectedTerm(null)}>
+                    <div
+                        className="bg-white rounded-2xl shadow-xl w-full max-w-2xl overflow-hidden flex flex-col max-h-[90vh]"
+                        onClick={e => e.stopPropagation()}
+                    >
+                        <div className="flex items-start justify-between p-6 md:p-8 border-b border-slate-100 bg-slate-50">
+                            <div>
+                                <span className="text-sm font-bold text-[#1a4696] uppercase tracking-wide mb-2 block">
+                                    {selectedTerm.reading}
+                                </span>
+                                <h2 className="text-2xl md:text-3xl font-bold text-[#1a4696] leading-tight">
+                                    {selectedTerm.term}
+                                </h2>
+                            </div>
+                            <button
+                                onClick={() => setSelectedTerm(null)}
+                                className="p-2 rounded-full hover:bg-slate-200 text-slate-500 transition-colors shrink-0"
+                            >
+                                <X className="w-6 h-6" />
+                            </button>
+                        </div>
+                        <div className="p-6 md:p-8 overflow-y-auto">
+                            <p className="text-[#444444] text-xl leading-relaxed font-medium whitespace-pre-wrap">
+                                {selectedTerm.definition}
+                            </p>
+                        </div>
+                        <div className="p-6 border-t border-slate-100 bg-slate-50 flex justify-between items-center">
+                            <span className="bg-white px-3 py-1.5 rounded-md border border-slate-200 text-sm font-bold text-slate-500">
+                                索引: {selectedTerm.initial}
+                            </span>
+                            <button
+                                onClick={() => setSelectedTerm(null)}
+                                className="px-6 py-2 bg-[#1a4696] text-white font-bold rounded-lg hover:bg-[#12316e] transition-colors"
+                            >
+                                閉じる
+                            </button>
+                        </div>
+                    </div>
                 </div>
             )}
         </div>
