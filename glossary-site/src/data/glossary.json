@@ -628,15 +628,6 @@
     "status": "AI_GENERATED_EASY_MODE"
   },
   {
-    "id": 78,
-    "term": "アルゴリズム高速取引",
-    "reading": "あるごりずむこうそくとりひき",
-    "definition": "コンピュータを使って、非常に速いスピードで株や通貨を売買する方法のことです。  \n特定のルールや計算式に基づいて自動的に取引を行い、  \n市場の動きに素早く反応することで利益を狙います。  \n人間の手では追いつけない速さで取引を行うため、  \n多くの資金を短時間で動かすことができるのことです。",
-    "initial": "あ",
-    "status": "AI_GENERATED_EASY_MODE",
-    "search_en": "algorithm high-frequency trading"
-  },
-  {
     "id": 79,
     "term": "季節調整値",
     "reading": "きせつちょうせいち",
