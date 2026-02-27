@@ -31056,14 +31056,6 @@
     "status": "AI_GENERATED_EASY_MODE"
   },
   {
-    "id": 4119,
-    "term": "FLOOR",
-    "reading": "ふろあ",
-    "definition": "市場での価格が下がらないように設定された最低価格のことです。  \nこの価格を下回ると、投資家が損失を避けるために売りに出すことが多く、  \n結果として価格が下がりにくくなる効果があります。  \nつまり、FLOORは価格の下限を指します。",
-    "initial": "ふ",
-    "status": "AI_GENERATED_EASY_MODE"
-  },
-  {
     "id": 4120,
     "term": "フロア",
     "reading": "ふろあ",
