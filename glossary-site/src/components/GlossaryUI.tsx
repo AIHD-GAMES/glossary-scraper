@@ -30,6 +30,19 @@ const INITIALS = [
     'わ', 'A-Z'
 ];
 
+// カタカナ・ひらがな変換ユーティリティ
+const toHiragana = (str: string) => {
+    return str.replace(/[\u30A1-\u30F6]/g, match =>
+        String.fromCharCode(match.charCodeAt(0) - 0x60)
+    );
+};
+
+const toKatakana = (str: string) => {
+    return str.replace(/[\u3041-\u3096]/g, match =>
+        String.fromCharCode(match.charCodeAt(0) + 0x60)
+    );
+};
+
 function TermCard({ item, onClick }: { item: GlossaryTerm, onClick: () => void }) {
     return (
         <div
@@ -73,12 +86,18 @@ export default function GlossaryUI() {
     const ITEMS_PER_PAGE = 100;
 
     const filteredData = useMemo(() => {
+        const queryLower = searchQuery.toLowerCase();
+        const queryHiragana = toHiragana(searchQuery);
+        const queryKatakana = toKatakana(searchQuery);
+
         return glossaryData.filter((item) => {
             const matchesSearch =
-                item.term.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                item.reading.includes(searchQuery) ||
-                item.definition.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                (item.search_en && item.search_en.toLowerCase().includes(searchQuery.toLowerCase()));
+                item.term.toLowerCase().includes(queryLower) ||
+                item.term.includes(queryKatakana) ||
+                item.term.includes(queryHiragana) ||
+                item.reading.includes(queryHiragana) ||
+                item.definition.toLowerCase().includes(queryLower) ||
+                (item.search_en && item.search_en.toLowerCase().includes(queryLower));
 
             const matchesInitial = !selectedInitial ||
                 (selectedInitial === 'A-Z'
