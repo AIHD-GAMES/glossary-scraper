@@ -13,7 +13,7 @@ export default function Home() {
             投資部 用語集
           </h1>
           <p className="text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed font-bold">
-            専門用語をやさしく解説。資産運用を強力にサポートします。
+            講義でわからない投資用語をすぐに調べられます。
           </p>
         </div>
       </div>
