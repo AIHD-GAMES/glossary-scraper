@@ -5,4 +5,5 @@ export type GlossaryTerm = {
     reading: string;
     definition: string;
     initial: string;
+    search_en?: string;
 };

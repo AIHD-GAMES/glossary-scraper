@@ -77,7 +77,8 @@ export default function GlossaryUI() {
             const matchesSearch =
                 item.term.toLowerCase().includes(searchQuery.toLowerCase()) ||
                 item.reading.includes(searchQuery) ||
-                item.definition.toLowerCase().includes(searchQuery.toLowerCase());
+                item.definition.toLowerCase().includes(searchQuery.toLowerCase()) ||
+                (item.search_en && item.search_en.toLowerCase().includes(searchQuery.toLowerCase()));
 
             const matchesInitial = !selectedInitial ||
                 (selectedInitial === 'A-Z'
