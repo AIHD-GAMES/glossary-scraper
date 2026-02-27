@@ -27,7 +27,7 @@ const INITIALS = [
     'ま', 'み', 'む', 'め', 'も',
     'や', 'ゆ', 'よ',
     'ら', 'り', 'る', 'れ', 'ろ',
-    'わ', 'A-Z'
+    'わ'
 ];
 
 // カタカナ・ひらがな変換ユーティリティ
@@ -99,10 +99,7 @@ export default function GlossaryUI() {
                 item.definition.toLowerCase().includes(queryLower) ||
                 (item.search_en && item.search_en.toLowerCase().includes(queryLower));
 
-            const matchesInitial = !selectedInitial ||
-                (selectedInitial === 'A-Z'
-                    ? /^[A-Za-z]/.test(item.reading)
-                    : item.initial === selectedInitial);
+            const matchesInitial = !selectedInitial || item.initial === selectedInitial;
 
             return matchesSearch && matchesInitial;
         });
