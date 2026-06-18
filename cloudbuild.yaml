@@ -27,10 +27,11 @@ steps:
       - '--platform'
       - 'managed'
       - '--allow-unauthenticated'
+      - '--service-account'
+      - 'static-web-runner@$PROJECT_ID.iam.gserviceaccount.com'
 
 options:
   logging: CLOUD_LOGGING_ONLY
 
 images:
   - 'gcr.io/$PROJECT_ID/toushibu-glossary:$COMMIT_SHA'
-
